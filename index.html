@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kashish Badhwar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>KASHISH BADHWAR</h1>
+
+        <p class="intro">
+        B.Tech Electronics & Computer Engineering Student
+        interested in AI, Web Development and Signal Processing.
+        Building practical projects while exploring machine learning,
+        frontend development and research.
+        </p>
+
+        <div class="buttons">
+            <a href="projects.html" class="btn primary">Projects</a>
+
+            <a href="assets/resume/Resume.pdf"
+            target="_blank"
+            class="btn secondary">
+            Resume
+            </a>
+
+            <button class="btn secondary" onclick="openPanel('about')">About</button>
+            <button class="btn secondary" onclick="openPanel('skills')">Skills</button>
+            <button class="btn secondary" onclick="openPanel('contact')">Contact</button>
+        </div>
+    </section>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay" onclick="closePanel()"></div>
+
+    <!-- FOCUS PANEL -->
+    <div class="focus-panel" id="focusPanel">
+        <button class="close-btn" onclick="closePanel()">✕</button>
+        <div id="panel-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
