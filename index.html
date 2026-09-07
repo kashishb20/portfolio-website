@@ -1,47 +1,865 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Kashish Badhwar - Electronics & Computer Engineering student interested in AI, software development and signal processing.">
+
+    <meta name="author"
+          content="Kashish Badhwar">
+
     <title>Kashish Badhwar | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>KASHISH BADHWAR</h1>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-        <p class="intro">
-        B.Tech Electronics & Computer Engineering Student
-        interested in AI, Web Development and Signal Processing.
-        Building practical projects while exploring machine learning,
-        frontend development and research.
-        </p>
+    <header class="navbar">
 
-        <div class="buttons">
-            <a href="projects.html" class="btn primary">Projects</a>
+        <div class="nav-container">
 
-            <a href="assets/resume/Resume.pdf"
-            target="_blank"
-            class="btn secondary">
-            Resume
+            <a href="#home" class="logo">
+                KASHISH.
             </a>
 
-            <button class="btn secondary" onclick="openPanel('about')">About</button>
-            <button class="btn secondary" onclick="openPanel('skills')">Skills</button>
-            <button class="btn secondary" onclick="openPanel('contact')">Contact</button>
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#education">Education</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
         </div>
-    </section>
 
-    <!-- OVERLAY -->
-    <div class="overlay" id="overlay" onclick="closePanel()"></div>
+    </header>
 
-    <!-- FOCUS PANEL -->
-    <div class="focus-panel" id="focusPanel">
-        <button class="close-btn" onclick="closePanel()">✕</button>
-        <div id="panel-content"></div>
-    </div>
 
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-greeting">
+                    Hi, I'm
+                </p>
+
+                <h1>
+                    Kashish Badhwar
+                </h1>
+
+                <h2>
+                    Electronics & Computer Engineering Student
+                </h2>
+
+                <p class="hero-description">
+                    I build practical solutions using AI, software
+                    development and signal processing while exploring
+                    intelligent systems and emerging technologies.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects"
+                       class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <!-- Change this path if your resume has
+                         a different filename/location -->
+                    <a href="assets/resume.pdf"
+                       target="_blank"
+                       class="btn secondary-btn">
+                        Download Resume
+                    </a>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <!-- Replace with your actual GitHub -->
+                    <a href="YOUR_GITHUB_LINK"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <!-- Replace with your actual LinkedIn -->
+                    <a href="YOUR_LINKEDIN_LINK"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                    <!-- Replace with your actual email -->
+                    <a href="mailto:YOUR_EMAIL">
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section id="about"
+                 class="section about-section">
+
+            <div class="section-heading">
+
+                <p>
+                    GET TO KNOW ME
+                </p>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I'm Kashish Badhwar, a B.Tech Electronics &
+                        Computer Engineering student with an interest
+                        in Artificial Intelligence, software development
+                        and signal processing.
+                    </p>
+
+                    <p>
+                        I enjoy building practical projects that combine
+                        engineering concepts with modern software
+                        technologies. I'm continuously working on my
+                        programming, problem-solving and development
+                        skills.
+                    </p>
+
+                    <p>
+                        My interests currently include AI and machine
+                        learning, web development, natural language
+                        processing and biomedical signal analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlights">
+
+                    <div class="highlight-card">
+
+                        <span class="highlight-number">
+                            01
+                        </span>
+
+                        <h3>
+                            AI & ML
+                        </h3>
+
+                        <p>
+                            Exploring machine learning, NLP and
+                            intelligent systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-card">
+
+                        <span class="highlight-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Development
+                        </h3>
+
+                        <p>
+                            Building practical web and software
+                            applications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-card">
+
+                        <span class="highlight-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Research
+                        </h3>
+
+                        <p>
+                            Working with MATLAB, signal processing
+                            and EEG analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS SECTION
+        ========================== -->
+
+        <section id="skills"
+                 class="section skills-section">
+
+            <div class="section-heading">
+
+                <p>
+                    WHAT I WORK WITH
+                </p>
+
+                <h2>
+                    Skills
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- Programming -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>C++</span>
+
+                        <span>Python</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Web Development -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Flask</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI / ML -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        AI
+                    </div>
+
+                    <h3>
+                        AI / Machine Learning
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>Machine Learning</span>
+
+                        <span>NLP</span>
+
+                        <span>AI APIs</span>
+
+                        <span>Contrastive Learning</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        ∿
+                    </div>
+
+                    <h3>
+                        Engineering
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>MATLAB</span>
+
+                        <span>Signal Processing</span>
+
+                        <span>EEG Analysis</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tools -->
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        ⚙
+                    </div>
+
+                    <h3>
+                        Tools
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <span>Git</span>
+
+                        <span>GitHub</span>
+
+                        <span>VS Code</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS SECTION
+        ========================== -->
+
+        <section id="projects"
+                 class="section projects-section">
+
+            <div class="section-heading">
+
+                <p>
+                    MY WORK
+                </p>
+
+                <h2>
+                    Featured Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="project-card featured-project">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            AI • WEB DEVELOPMENT
+                        </p>
+
+                        <h3>
+                            AI Study Helper
+                        </h3>
+
+                        <p>
+                            An AI-powered study assistant designed to
+                            help engineering students understand concepts,
+                            generate explanations and prepare efficiently
+                            for examinations.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+
+                            <span>Python</span>
+
+                            <span>Flask</span>
+
+                            <span>OpenAI API</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <!-- Replace with actual deployed website -->
+                            <a href="YOUR_AI_STUDY_HELPER_LIVE_LINK"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Live Demo ↗
+                            </a>
+
+                            <!-- Replace with actual GitHub repository -->
+                            <a href="YOUR_AI_STUDY_HELPER_GITHUB"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            SIGNAL PROCESSING • RESEARCH
+                        </p>
+
+                        <h3>
+                            EEG Signal Analysis
+                        </h3>
+
+                        <p>
+                            EEG signal processing and analysis using
+                            MATLAB, including frequency-band analysis,
+                            topographic mapping and Alpha, Beta and
+                            Theta power estimation.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>MATLAB</span>
+
+                            <span>EEG</span>
+
+                            <span>Signal Processing</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <!-- Add GitHub link when available -->
+                            <a href="YOUR_EEG_GITHUB"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            DATABASE • SQL
+                        </p>
+
+                        <h3>
+                            Criminal Investigation & Case Management System
+                        </h3>
+
+                        <p>
+                            A database management system designed to
+                            organize criminal records, cases,
+                            investigations and judicial information
+                            in a structured system.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>DBMS</span>
+
+                            <span>SQL</span>
+
+                            <span>Database Design</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="YOUR_DBMS_GITHUB"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 04 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            NLP • AI RESEARCH
+                        </p>
+
+                        <h3>
+                            Idiomatic Machine Translation
+                        </h3>
+
+                        <p>
+                            Exploring bipartite graphs and contrastive
+                            learning approaches for improving idiomatic
+                            machine translation.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>NLP</span>
+
+                            <span>Contrastive Learning</span>
+
+                            <span>Graph Learning</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="YOUR_NLP_GITHUB"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="projects-more">
+
+                <a href="projects.html"
+                   class="view-all">
+                    View All Projects →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION SECTION
+        ========================== -->
+
+        <section id="education"
+                 class="section education-section">
+
+            <div class="section-heading">
+
+                <p>
+                    MY ACADEMIC JOURNEY
+                </p>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-main">
+
+                    <span class="education-year">
+                        2024 — 2028
+                    </span>
+
+                    <h3>
+                        B.Tech — Electronics & Computer Engineering
+                    </h3>
+
+                    <!-- Replace with your exact official university name -->
+                    <p>
+                        YOUR UNIVERSITY NAME
+                    </p>
+
+                </div>
+
+
+                <div class="education-status">
+
+                    <span>
+                        Currently Studying
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT SECTION
+        ========================== -->
+
+        <section id="contact"
+                 class="section contact-section">
+
+            <div class="contact-content">
+
+                <div class="section-heading">
+
+                    <p>
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Let's Connect
+                    </h2>
+
+                </div>
+
+
+                <p class="contact-description">
+
+                    I'm always interested in connecting with people,
+                    discussing technology, learning new things and
+                    exploring opportunities to build meaningful projects.
+
+                </p>
+
+
+                <div class="contact-links">
+
+                    <!-- Replace with your email -->
+                    <a href="mailto:YOUR_EMAIL"
+                       class="contact-link">
+
+                        <span>
+                            Email
+                        </span>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- Replace with your LinkedIn -->
+                    <a href="YOUR_LINKEDIN_LINK"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link">
+
+                        <span>
+                            LinkedIn
+                        </span>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <!-- Replace with your GitHub -->
+                    <a href="YOUR_GITHUB_LINK"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="contact-link">
+
+                        <span>
+                            GitHub
+                        </span>
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>
+                    KASHISH.
+                </h3>
+
+                <p>
+                    Electronics & Computer Engineering
+                </p>
+
+            </div>
+
+
+            <div class="footer-socials">
+
+                <a href="YOUR_GITHUB_LINK"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="YOUR_LINKEDIN_LINK"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:YOUR_EMAIL">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Kashish Badhwar. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
